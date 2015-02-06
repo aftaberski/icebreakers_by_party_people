@@ -14,4 +14,4 @@ rosa = User.create(name: "Rosa", email: "rosa@rosa.com", password: "rosa")
 anna = User.create(name: "Anna", email: "anna@anna.com", password: "anna")
 
 Quote.create(text: "I'm reading a book about antigravity. It's impossible to put down.", user: gary, subcategory: subcat_punny)
-Quote.create(text: "Did you know that the average 4 year old asks over four hundred questions a day.", user: gary, subcategory: subcat_punny)
+Quote.create(text: "Did you know that the average 4 year old asks over four hundred questions a day.", user: gary, subcategory: subcat_scientific)
