@@ -7,9 +7,14 @@ class QuoteSpec
     user = User.create(name: "Gary", email: "gary@gary.com", password: "gary")
 
     let(:quote) { Quote.create(text: "I like cats", user: user, subcategory: subcategory)}
+     let(:quote_to_delete) { Quote.create(text: "I love dogs", user: user, subcategory: subcategory)}
+     let(:quote_to_delete_id) { quote_to_delete.id}
+
+
 
       before do
         quote
+        quote_to_delete_id
       end
 
       it 'should respond to /new' do
@@ -23,5 +28,14 @@ class QuoteSpec
       expect(last_response.body).to include 'update'
       expect(last_response.body).to include 'I like cats'
     end
+
+
+    it 'should delete a quote by id' do
+      delete "/categories/#{category.id}/subcategories/#{subcategory.id}/quotes/#{quote_to_delete_id}/delete", {}, {'rack.session' =>  { :user => user.id } }
+      expect(Quote.exists?(quote_to_delete_id)).to eq(false)
+    end
+
+
+
   end
 end
