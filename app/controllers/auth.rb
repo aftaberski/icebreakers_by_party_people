@@ -26,5 +26,4 @@ post '/login' do
     @invalid_login = true
     erb :'auth/login'
   end
-
 end

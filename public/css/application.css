@@ -1,7 +1,132 @@
-.white_text{
-  color: white;
+a.navbar-brand {
+  font-family: 'Grand Hotel', Arial, sans-serif;
+  font-size: 30px;
 }
 
-body {
-  padding-top: 100px;
+.white_text {
+  color: rgb(25, 32, 42);
 }
+
+.list-group {
+  margin-top: 125px;
+  margin-bottom: 25px;
+  color: rgb(25, 32, 42 );
+}
+
+span {
+  color: rgb(252, 206, 0);
+}
+
+.navbar {
+  background-color: rgb(25, 32, 42 );
+  border: none;
+}
+
+.form-inline .form-group {
+  display: block;
+  padding: 10px;
+}
+
+.form-inline .form-group * {
+  width: 100%;
+  background: none;
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: none;
+  border-radius: 0;
+  background: #FFF;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions .btn {
+  width: 100px;
+}
+
+.btn-default {
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn {
+  background: none;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: #fff;
+  border-radius: none;
+  background-color: rgb(25, 32, 42 );
+  border-radius: 0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #82FFD2;
+}
+
+.btn-default:hover {
+  color: #FFF;
+}
+
+.alert{
+  background: none;
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-radius: 0;
+  color: #FFF;
+  background-color: rgb(25, 32, 42 );
+}
+
+.logo_img {
+  margin-top: 150px;
+  width: 100%;
+}
+
+#page-wrapper.login-img {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%), url(/img/party.jpg) no-repeat;
+  /*background: url(../imgs/brooklyn.png);*/
+  background-position: 50% 100%;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+.break_the_ice {
+  color: rgb(252, 206, 0);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: 300;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #82FFD2;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background: none;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  border: 1px solid rgb(25, 32, 42 );
+  color: #333;
+  margin: 10px;
+  padding: 15px;
+}
+
