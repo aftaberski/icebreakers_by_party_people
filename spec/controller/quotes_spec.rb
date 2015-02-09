@@ -32,7 +32,6 @@ class QuoteSpec
 
     it 'should delete a quote by id' do
       delete "/categories/#{category.id}/subcategories/#{subcategory.id}/quotes/#{quote_to_delete_id}/delete", {}, {'rack.session' =>  { :user => user.id } }
-      expect(last_response).to be_ok
       expect(Quote.exists?(quote_to_delete_id)).to eq(false)
     end
 
