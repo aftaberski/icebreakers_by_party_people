@@ -7,6 +7,8 @@ get '/categories/:category_id/subcategories/:subcategory_id/quotes' do
     redirect ('/login')
   else
     @quotes = Subcategory.find(params[:subcategory_id]).quotes
+    @category_id = params[:category_id]
+    @subcategory_id = params[:subcategory_id]
     erb :quotes
   end
 end
