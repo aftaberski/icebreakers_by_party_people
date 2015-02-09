@@ -27,3 +27,7 @@ post '/login' do
     erb :'auth/login'
   end
 end
+
+get '/signup_partial' do
+  erb :'/auth/signup', :layout => false
+end

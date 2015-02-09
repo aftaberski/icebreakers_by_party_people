@@ -1,11 +1,13 @@
 
 <div class="list-group">
 
-  <h1>Here are our categories</h1>
+  <h1>How will <span>you</span> Break the ice?</h1>
   <%@categories.each do |category|%>
-        <div class="list-group-item active">
-          <h4 class="list-group-item-heading"><a href="/categories/<%=category.id%>"> <span class="white_text"><%=category.name%></span></a></h4>
-        </div>
+    <a href="/categories/<%=category.id%>">
+      <div class="list-group-item active">
+      <h4 class="list-group-item-heading"><span class="white_text"><%=category.name%></span></h4>
+    </div>
+    </a>
   <%end%><!-- end categories loop-->
 </div>
 

@@ -1,7 +1,7 @@
 /* -- custom css for Bootstrap 3.x --*/
 
 /* move special fonts to HTML head for better performance */
-@import url(http://fonts.googleapis.com/css?family=Voltaire);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 html,
 body {
@@ -13,11 +13,14 @@ body {
 /* fix bs3 horizontal scrollbar bug */
 .row { margin: 0; padding: 0 }
 
+.navbar {
+  background-color: #fff;
+}
 
 /* use special fonts in certain elements */
 h1,h2,h3,h4,.lead,.btn,.navbar a {
-  text-transform:uppercase;
-  font-family:'Voltaire',Arial,sans-serif;
+  /*text-transform:uppercase;*/
+  font-family:'Lato',Arial,sans-serif;
   letter-spacing:2px;
 }
 
@@ -62,7 +65,6 @@ img.grayscale {
    font-size:28px;
    border-color:#eeeeee;
    padding:15px;
-   background-color:transparent;
    color:#ffffff;
 }
 
@@ -89,7 +91,7 @@ img.grayscale {
   background-color:#d46054;
 }
 
-    
+
 .header h1 {
   font-size:80px;
   -webkit-text-stroke: 1px rgba(f,f,f,0.1);
@@ -140,7 +142,7 @@ img.grayscale {
 }
 
 .bright {
-  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
+  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed;
   color:#777;
 }
 
@@ -162,7 +164,7 @@ img.grayscale {
   width: 140px;
   height: 140px;
   line-height: 136px;
-  vertical-align: middle; 
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -175,7 +177,7 @@ img.grayscale {
   padding-top:7%;
   height: 100%;
   width: 100%;
-  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
